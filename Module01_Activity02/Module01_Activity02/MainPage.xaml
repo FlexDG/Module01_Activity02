@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:local="clr-namespace:Module01_Activity02"
+             x:Class="Module01_Activity02.MainPage"  BackgroundColor="#151616">   
+    <StackLayout>
+        <RelativeLayout>
+            <BoxView x:Name="Boxview1" Color="#52CDFF" RelativeLayout.WidthConstraint=
+                         "{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1}" 
+                          
+                     
+                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor=0.4}" />
+
+
+            <StackLayout Margin="0,25" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="-40">
+
+                <Frame BackgroundColor="Transparent" HeightRequest="100" WidthRequest="70" CornerRadius="45" HasShadow="True" Margin="20,10,10,0" HorizontalOptions="Center" Padding="0">
+                    <Image Source="https://i.ibb.co/b5ZC1nr/micrco.png" Aspect="AspectFill" Margin="0,0,0,0"/>
+                </Frame>
+
+
+            </StackLayout>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" Margin="47,165,10,0">
+                <Label Text="Welcome to Activity 02!" FontSize="28" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Padding="0" Margin="10,240,10,0">
+                <Frame  BackgroundColor="#212121" CornerRadius="30"  HeightRequest="490" HasShadow="True" Padding="0" Margin="0,0,0,0">
+
+
+                        <StackLayout Margin="50,67,53,0" Padding="0" Spacing="55" WidthRequest="270">
+
+
+                        <Button Text="First Button" BackgroundColor ="{x:Static local:SharedStatic.ButtonColor}"
+                TextColor="{x:Static local:SharedStatic.ButtonTextColor}" CornerRadius="20" WidthRequest="250"/>
+
+                        <Button Text="Second Button" BackgroundColor ="{x:Static local:SharedStatic.ButtonColor}"
+                TextColor="{x:Static local:SharedStatic.ButtonTextColor}" CornerRadius="20"/>
+
+                        <Button Text="Third Button" BackgroundColor ="{x:Static local:SharedStatic.ButtonColor}"
+                TextColor="{x:Static local:SharedStatic.ButtonTextColor}" CornerRadius="20"/>
+
+                        <Button Text="Last Button" BackgroundColor ="{x:Static local:SharedStatic.ButtonColor}"
+                TextColor="{x:Static local:SharedStatic.ButtonTextColor}" CornerRadius="20"/>
+
+                    </StackLayout>
+
+
+                </Frame>
+ 
+            </StackLayout>
+
+        </RelativeLayout>
+    </StackLayout>
+</ContentPage>
